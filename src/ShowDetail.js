@@ -21,7 +21,7 @@ export default function ShowDetail() {
                 <p dangerouslySetInnerHTML={{ __html: show?.summary }}/>
                 <span className="fa fa-star checked">&nbsp;&nbsp;{show?.rating?.average}</span>
                 <div className="show-genre">
-                    {show.genres.map((genre, idx) => <span key={idx}>{genre}</span>)}
+                    {show?.genres?.map((genre, idx) => <span key={idx}>{genre}</span>)}
                 </div>
                 <span>
                     <a target='_blank' className='view-btn' href={show.url}>View</a>

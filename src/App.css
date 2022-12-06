@@ -105,6 +105,7 @@
     margin-inline: auto;
     gap: 3rem;
     flex-direction: row;
+    padding: 20px;
 }
 
 .show-detail img{
@@ -142,5 +143,14 @@
 @media (max-width: 700px){
     .show-detail{
         flex-direction: column;
+    }
+}
+
+@media (max-width: 850px){
+    .border-solid{
+        opacity: 1;
+    }
+    .show-content{
+        background-color: rgba(0, 0, 0, 0.7);
     }
 }
