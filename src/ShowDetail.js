@@ -24,7 +24,7 @@ export default function ShowDetail() {
                     {show?.genres?.map((genre, idx) => <span key={idx}>{genre}</span>)}
                 </div>
                 <span>
-                    <a target='_blank' className='view-btn' href={show.url}>View</a>
+                    <a target='_blank' rel="noreferrer" className='view-btn' href={show.url}>View</a>
                 </span>
             </div>
         </div>
